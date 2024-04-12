@@ -66,7 +66,7 @@
 
 ### 02.01. Application architecture
 
- ## Structure
+ ### Structure
 
   01. [x] Folder Structure
 
@@ -135,7 +135,7 @@
 
 ### 05.02. Exchange rate Entities and Doctrine
 
- ## Setup
+ ### Setup
 
   01. [x] Exchange Rates and repository test
 
