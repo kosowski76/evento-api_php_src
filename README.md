@@ -66,6 +66,8 @@
 
 ### 02.01. Application architecture
 
+ ## Structure
+
   01. [x] Folder Structure
 
   02. [x] Doctine schema definitions
@@ -132,6 +134,8 @@
     // todo:
 
 ### 05.02. Exchange rate Entities and Doctrine
+
+ ## Setup
 
   01. [x] Exchange Rates and repository test
 
