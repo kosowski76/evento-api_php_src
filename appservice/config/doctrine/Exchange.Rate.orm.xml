@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                          https://www.doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+    <entity name="Evento\Domain\Exchange\Rate" table="rate" repository-class="Evento\Infrastructure\Doctrine\RateRepository">
+
+        <id name="id" type="integer" column="id">
+            <generator strategy="AUTO"/>
+        </id>
+
+        <many-to-one field="exchange" target-entity="Evento\Domain\Exchange\Exchange">
+            <cascade><cascade-remove /></cascade>
+            <join-column name="exchange_id" referenced-column-name="id" on-delete="CASCADE" />
+        </many-to-one>
+
+        <field name="currency" column="currency" length="25" nullable="false" />
+        <field name="code" column="code" length="4" nullable="false" />
+        <field name="bid" type="float" scale="5" precision="2" />
+        <field name="ask" type="float" scale="5" precision="2" />
+
+    </entity>
+
+</doctrine-mapping>
