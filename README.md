@@ -17,7 +17,7 @@
 
    This is an example REST API code created in the 'Symfony' framework
   and using the 'Domain Driven Design' DDD pattern.
-   The domain of this example is to download a list of currency exchange tables
+   The domain of this example is to fetch a list of currency exchange tables
   from the NBP API of the National Bank of Poland for a specified number of days
   and then display it in the Json format.
 
@@ -32,11 +32,13 @@
 
 
   # Objective:
-    Preparing a demo REST API, using the 'Domain Driven Desin'
-  DDD design pattern technique and running the application on GCP Google Cloud Platform
 
-    Confirmation of knowledge and experience in use
-  tools, techniques and patterns mentioned in this publication.
+    Preparing a demo REST API
+  using the 'Domain Driven Desin' DDD design pattern technique
+  and running the application on GCP Google Cloud Platform
+
+    Confirmation of knowledge and experience
+  in use tools, techniques and patterns mentioned in this publication.
 
   
   Below is a list of the activities performed.
