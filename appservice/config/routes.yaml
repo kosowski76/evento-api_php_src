@@ -1,0 +1,29 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: Evento\Controller
+    type: attribute
+    # type: annotation
+
+api_login_check:
+    path: /api/login_check
+
+api_user_create:
+    path: /api/users
+    methods: POST
+    controller: Evento\Controller\User\UserController::index
+
+api_event_list:
+    path: /api/events
+    controller: Evento\Controller\Event\ListController::index
+    methods: GET
+
+api_event_ticket:
+    path: /api/tickets
+    controller: Evento\Controller\Evento\TicketController::index
+    methods: POST
+
+api_exchange_list:
+    path: /api/exchanges
+    controller: Evento\Controller\ExchangeRate\ListExchangeController::index
+    methods: GET

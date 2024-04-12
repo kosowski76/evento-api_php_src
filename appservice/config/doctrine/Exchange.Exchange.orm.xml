@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                          https://www.doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+    <entity name="Evento\Domain\Exchange\Exchange" table="exchange" repository-class="Evento\Infrastructure\Doctrine\ExchangeRepository">
+
+        <id name="id" type="integer" column="id">
+            <generator strategy="AUTO"/>
+        </id>
+        <field name="tableC" column="tablec" length="2" nullable="false" />
+        <field name="no" column="no" length="24" nullable="false" />
+        <field name="tradingDate" column="trading_date" type="datetime" nullable="false" />
+        <field name="effectiveDate" column="effective_date" type="datetime" nullable="false" />
+
+    </entity>
+
+</doctrine-mapping>
